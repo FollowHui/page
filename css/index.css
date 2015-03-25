@@ -1,14 +1,23 @@
 *{padding:0px;margin:0px;}
 
 body{
+	margin: 0px;
+	padding: 0px;
 	background-image: url("../img/bg-noise.jpg");
 	background-repeat:repeat ;
 	margin-top: 0px;
 	overflow: scroll;
 	width:100%;
 }
+
+div{
+	min-width: 1024px;
+	width:expression(document.body.clientWidth<1024?"1024px":auto);
+}
+
 #home-page {
-	width:100%;
+	width: 100%;
+	min-width: 1024px;
 	height:758px;
 	background:url("../img/bg.jpg");
 	background-repeat:no-repeat;
@@ -22,7 +31,7 @@ body{
 }
 .logo-h1{
 	padding: 0px;
-	margin-right: 60%;
+	margin-right: 70%;
 	text-align: center;
 	font-size: 74px;
 	color:#856941;
